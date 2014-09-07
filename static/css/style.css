@@ -10,6 +10,10 @@ body {
 	background-color: rgba(248, 247, 216, 0.7);
 }
 
+.date {
+	font-size: 11px;
+}
+
 hr {
 	border-color: black;
 }

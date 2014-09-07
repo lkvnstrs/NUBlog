@@ -47,7 +47,7 @@ def gravatar_url(email, size=80):
 
 def format_datetime(timestamp):
     """Format a timestamp for display"""
-    return timestamp.strftime('%d/%m/%Y\n%H:%M')
+    return timestamp.strftime('%d %B, %Y')
 
 def first_eighty_characters(body):
     """Returns the first 80 characters of given body"""

@@ -15,6 +15,8 @@
 		{% for post in posts %}
 		<div class="post">
 			<a href="/posts/{{ post.id }}"><h4>{{ post.title }}</h4></a>
+			<p class="date">{{ post.pub_date | datetimeformat }}</p>
+			
 			{% if post.body|length > 100 %}
 				<p>{{ post.body|eighty_chars }}... <a href="/posts/{{ post.id }}">Read more</a></p>
 			{% else %}
