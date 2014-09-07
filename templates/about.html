@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}About Me{% endblock %}
+{% block body %}
+<div class="container about-container">
+	<h2>About Me</h2>
+	<div class="col-md-3">
+		<img class="about-img" src="{{ url_for('static', filename='img/me.jpg') }}">
+	</div>
+	<div class="col-md-offset-3 box">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ligula eros. Pellentesque sit amet facilisis justo, at elementum lacus. Vivamus vulputate suscipit mi vel congue. Sed sodales nunc sed justo interdum dapibus. Nunc accumsan quis purus vitae tempus. Maecenas commodo dignissim risus, at finibus velit ultricies at. Nullam neque sem, eleifend in magna nec, dictum varius lorem. Vestibulum facilisis massa a odio pulvinar, ut fringilla lectus malesuada. Praesent elit mauris, gravida id tellus nec, lobortis iaculis odio. Nulla iaculis, libero a sagittis tempus, ex dui laoreet justo, vitae feugiat risus lectus sed turpis. Ut eget imperdiet mauris. Nam iaculis at mauris sed egestas. Mauris blandit accumsan augue, sit amet vehicula lorem tincidunt a. Aliquam semper mi id laoreet pretium.<br><br>
+
+			Mauris bibendum orci quis tellus faucibus lacinia. Suspendisse iaculis leo a lobortis pulvinar. Pellentesque id egestas arcu. Curabitur tristique gravida fermentum. Etiam fermentum mauris sodales lectus pretium tempor. Fusce ullamcorper eget libero at pretium. Ut nunc quam, tincidunt vitae commodo a, mollis ut ante. Morbi condimentum sem nec porttitor volutpat. Nulla massa nibh, luctus at ex sit amet, ornare finibus nunc. Nunc nec elementum mauris. Sed quam elit, tempus ac lacinia nec, tincidunt ac diam. Praesent vulputate euismod magna ac faucibus.
+		</p>
+	</div>
+</div>
+{% endblock %}

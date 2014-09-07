@@ -1,0 +1,95 @@
+body {
+	height: 100%;
+	background: url('../img/back.jpg');
+	background-size: 100%;
+	width: 100%;
+	color: black;
+}
+
+.navbar {
+	background-color: rgba(248, 247, 216, 0.7);
+}
+
+hr {
+	border-color: black;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+h1, h2, h3 {
+	font-weight: lighter;
+	text-align: center;
+}
+
+h2 {	
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+h3	{
+	margin-top: 0;
+}
+
+section {
+  	overflow: auto;
+}
+
+.icon {
+	width: 50px;
+}
+
+#home-title {
+	margin-top: 5px;
+	font-size: 50px;
+}
+
+/* containers */
+.about-container {
+	padding: 0 60px 0 60px;
+}
+
+/* images */
+.about-img {
+	width: 90%;
+	border-radius: 5%;
+}
+
+.home-img {
+	display: block;
+	width: 10%;
+	margin: 20px auto 10px auto;
+	border-radius: 10%;
+}
+
+/* shift for fixed navbar */
+
+.body-content {
+  	margin-top: 55px;
+}
+
+/* characteristics */
+
+.center {
+  	text-align: center;
+}
+
+
+/* posts */
+.post {
+	margin: 10px 0 10px 0;
+	padding: 10px 20px 10px 20px;
+	background-color: rgba(248, 247, 216, 0.7);
+}
+
+.description {
+	padding: 10px 0 0 10px;
+}
+
+.box {
+	background-color: rgba(248, 247, 216, 0.7);
+	padding: 10px 10px 10px 10px;
+	
+}

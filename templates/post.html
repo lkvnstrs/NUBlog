@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}{{ post.title }}{% endblock %}
+{% block body %}
+<div class="container">
+	<h1>{{ post.title }}</h1>
+	<h3>by Luke Van Seters</h3>
+	<div class="col-md-8 col-md-offset-2 box">
+		<p>{{ post.body }}</p>
+	</div>
+</div>
+{% endblock %}

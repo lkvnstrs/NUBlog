@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{% endblock %} | NUBlog</title>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body data-twttr-rendered="true">
+	<div class="navbar navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="{{ url_for('home') }}">NUBlog</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+						<li><a href="{{ url_for('home') }}">Home</a></li>
+						<li><a href="{{ url_for('about') }}">About Me</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="body-content">
+		{% block body %}{% endblock %}
+	</div>
+	
+	<div class="container footer">
+		<hr>
+		<footer>
+			<p style="float: left">NUBlog - Built as part of <a href="http://northeastern.io">Northeastern.io</a></p>
+			<p style="float: right">Directed by <a href="https://github.com/lkvnstrs">Luke Van Seters</a> and <a href="https://github.com/arjunblj">Arjun Balaji</a>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+<div class="container">
+	<img class="home-img" src="{{ url_for('static', filename='img/me.jpg') }}">
+	<h1 id="home-title">Luke Van Seters</h1>
+	<h3>Codirector of Northeastern.io | Programmer | Music Enthusiast</h3>
+	<div class="center">
+		<a href="https://twitter.com/lkvnstrs"><img class="icon" src="{{ url_for('static', filename='img/twitter.png') }}"></a>
+		<a href="https://github.com/lkvnstrs"><img class="icon"  src="{{ url_for('static', filename='img/github.png') }}"></a>
+	</div>	
+
+	<div class="col-md-8 col-md-offset-2">
+	{% if posts %}
+		{% for post in posts %}
+		<div class="post">
+			<a href="/posts/{{ post.id }}"><h4>{{ post.title }}</h4></a>
+			{% if post.body|length > 100 %}
+				<p>{{ post.body|eighty_chars }}... <a href="/posts/{{ post.id }}">Read more</a></p>
+			{% else %}
+				<p>{{ post.body }}</p>
+			{% endif %}
+		</div>
+		
+		{% endfor %}
+	{% else %}
+		<div class="box">
+			<p class="center">No blog posts yet</p>
+		</div>
+	{% endif %}	
+	</div>
+
+
+</div>
+{% endblock %}
